@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #1e4a7a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 5px solid #00aaff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilo del main */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1e4a7a;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:disabled {
+    background-color: #a1c1e3;
+    cursor: not-allowed;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #1e4a7a;
+    color: white;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #1e4a7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #005999;
+}
+
+button:last-child {
+    background-color: #ff4b5c;
+}
+
+button:last-child:hover {
+    background-color: #d93c4a;
+}

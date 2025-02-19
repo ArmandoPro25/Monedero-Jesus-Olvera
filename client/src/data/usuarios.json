@@ -1,0 +1,25 @@
+{
+    "usuarios":[
+      {
+          "nombre": "Juan",
+          "apellido": "Pérez",
+          "empresa": "Ejemplo S.A.",
+          "correo": "juan@gmail.com",
+          "password": "contraseña123"
+        },
+        {
+          "nombre": "María",
+          "apellido": "Gómez",
+          "empresa": "Ejemplo Corp.",
+          "correo": "maria@gmail.com",
+          "password": "secreta456"
+        },
+        {
+          "nombre": "Carlos",
+          "apellido": "Ramirez",
+          "empresa": "Corp.org",
+          "correo": "carlos@gmail.com",
+          "password": "1234"
+        }
+      ]
+    }

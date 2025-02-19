@@ -1,0 +1,46 @@
+<header>
+    <h1>Presupuestos</h1>
+  </header>
+  <main>
+    <h2>Registrar Presupuesto</h2>
+    <form (ngSubmit)="addPresupuesto()" #presupuestoForm="ngForm">
+      <label for="cantidad">Presupuesto:</label>
+      <input type="number" id="cantidad" name="cantidad" [(ngModel)]="presupuesto.cantidad" required>
+  
+      <label for="fecha_ini">Fecha de Inicio:</label>
+      <input type="date" id="fecha_ini" name="fecha_ini" [(ngModel)]="presupuesto.fecha_Ini" required>
+  
+      <label for="fecha_fin">Fecha de Fin:</label>
+      <input type="date" id="fecha_fin" name="fecha_fin" [(ngModel)]="presupuesto.fecha_Fin" required>
+  
+      <button type="submit" [disabled]="!presupuestoForm.form.valid">
+        {{ editingPresupuestoId ? 'Actualizar Presupuesto' : 'Agregar Presupuesto' }}
+      </button>
+    </form>
+  
+    <h2>Presupuestos Registrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cantidad</th>
+          <th>Fecha de Inicio</th>
+          <th>Fecha de Fin</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let presupuesto of presupuestos">
+          <td>{{ presupuesto.Id_Presupuesto ?? 'N/A' }}</td> <!-- Maneja el caso donde Id_Presupuesto podría ser undefined -->
+          <td>{{ presupuesto.cantidad ?? 'N/A' }}</td>
+          <td>{{ presupuesto.fecha_Ini ? (presupuesto.fecha_Ini | date) : 'N/A' }}</td>
+          <td>{{ presupuesto.fecha_Fin ? (presupuesto.fecha_Fin | date) : 'N/A' }}</td>
+          <td>
+            <button (click)="editPresupuesto(presupuesto)">Modificar</button>
+            <button (click)="deletePresupuesto(presupuesto.Id_Presupuesto?.toString() ?? '')">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  

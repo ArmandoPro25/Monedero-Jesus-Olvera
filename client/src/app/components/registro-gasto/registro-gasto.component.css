@@ -1,0 +1,156 @@
+/* src/app/registro-gasto/registro-gasto.component.css */
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+  overflow: hidden; /* Asegura que nada se salga del contenedor */
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00c6ff;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  font-weight: bold;
+  color: #495057;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+thead {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+tbody tr {
+  transition: background 0.3s ease;
+}
+
+td > button {
+  margin-right: 15px; /* Espacio entre botones */
+  margin-bottom: 5px; /* Evitar que los botones se salgan del contenedor */
+}
+
+td:last-child > button:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* Botones */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-right: 15px; /* Aumenta el margen entre botones */
+}
+
+button:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+button.btn-primary {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+}
+
+button.btn-primary:hover {
+  background: linear-gradient(to right, #0056b3, #007bff);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button.btn-warning {
+  background: linear-gradient(to right, #f0ad4e, #ec971f);
+  color: white;
+}
+
+button.btn-warning:hover {
+  background: linear-gradient(to right, #ec971f, #f0ad4e);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button.btn-danger {
+  background: linear-gradient(to right, #d9534f, #c9302c);
+  color: white;
+}
+
+button.btn-danger:hover {
+  background: linear-gradient(to right, #c9302c, #d9534f);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button.btn-secondary {
+  background: linear-gradient(to right, #6c757d, #5a6268);
+  color: white;
+}
+
+button.btn-secondary:hover {
+  background: linear-gradient(to right, #5a6268, #6c757d);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+td > div.action-buttons {
+  display: flex;
+  flex-direction: column; /* Coloca los botones en una columna */
+  gap: 5px; /* Espacio vertical entre botones */
+}
+
+
+

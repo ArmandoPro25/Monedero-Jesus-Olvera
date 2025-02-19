@@ -1,0 +1,43 @@
+<!-- tipo-gasto.component.html -->
+
+<div class="tipo-gasto-container">
+    <h2>Tipos de Gasto</h2>
+  
+    <!-- Formulario para agregar un nuevo tipo de gasto -->
+    <form (ngSubmit)="addTipoGasto()" class="add-form">
+      <input [(ngModel)]="descripcion" name="descripcion" placeholder="Descripción del tipo de gasto" required />
+      <button type="submit">Agregar Tipo de Gasto</button>
+    </form>
+
+   <!--Formulario para editar un tipo de gasto--> 
+   <form *ngIf="editarId !== null" [formGroup]="tipoGastoForm" (ngSubmit)="updateTipoGasto()">
+    <div class="form-group">
+      <label for="editarDescripcion">Descripción</label>
+      <input type="text" id="editarDescripcion" formControlName="descripcion" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-warning">Actualizar Tipo de Gasto</button>
+  </form>
+  
+    <!-- Tabla para mostrar los tipos de gasto existentes -->
+    <h2>Lista de Tipos de Gasto</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descripción</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tipo of tiposGasto">
+          <td>{{ tipo.Id_Tipo }}</td>
+          <td>{{ tipo.Descripcion }}</td>
+          <td>
+            <button (click)="startEdit(tipo.Id_Tipo, tipo.Descripcion)" class="btn btn-warning">Editar</button>
+            <button (click)="deleteTipoGasto(tipo.Id_Tipo)" class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,162 @@
+/* tipo-gasto.component.css */
+
+.tipo-gasto-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  /* Estilos para la pantalla de tipos de gasto */
+.tipo-gasto-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-form input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-form button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.add-form button:hover {
+  background-color: #007ecc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #343a40;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px; /* Espaciado vertical entre los botones */
+}
+
+button.btn-warning {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+button.btn-warning:hover {
+  background-color: #ec971f;
+}
+
+button.btn-danger {
+  background-color: #d9534f;
+  color: white;
+}
+
+button.btn-danger:hover {
+  background-color: #c9302c;
+}
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .add-form input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .add-form button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .tipo-gasto-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tipo-gasto-table th, .tipo-gasto-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .tipo-gasto-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .tipo-gasto-table button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tipo-gasto-table button:hover {
+    background-color: #e53935;
+  }
+  
